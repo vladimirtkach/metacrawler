@@ -44,7 +44,6 @@ public class Extractor {
 	}
 	
 	private String extractNode(Rules rule, Element e) {
-		
 		switch(rule.getDataLocation()) {
 			case insideNode:
 				return e.text();

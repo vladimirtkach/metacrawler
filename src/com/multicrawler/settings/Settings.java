@@ -100,8 +100,10 @@ public class Settings{
 			Rules rules = null;
 			if(e.hasAttr("attrSelector")){
 				rules = new Rules(selector,dataType,e.attr("attrSelector"));
+			} else {
+				rules = new Rules(selector,dataType);
 			}
-			rules = new Rules(selector,dataType);
+			
 			rulesMap.put(key, rules);
 		}
 	}
